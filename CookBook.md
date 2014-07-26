@@ -1,4 +1,4 @@
-Data Manipulation Note
+Data Manupilation Note
 ============================
 Main steps and techique
 -----------------------
