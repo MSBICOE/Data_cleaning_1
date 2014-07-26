@@ -47,4 +47,4 @@ colnames(combset)[1:nrow(feature)] <- feature[,2] # get descriptive label from f
 
 # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 output <- aggregate( do.call("cbind",combset[,1:nrow(feature)]) ~ subject + activity,combset, mean)
-write.table(output,"wk3assignment_tidydata.txt",sep"")
+write.table(output,"wk3assignment_tidydata.txt",sep="")
