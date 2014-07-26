@@ -1,5 +1,5 @@
-datacleaningcoursera
-====================
+Data Cleaning Coursera - Assignment
+===================================
 
 Assignment Repo for Coursera data cleaning course
 
@@ -9,7 +9,7 @@ on the variable name list from another file.
 
 The data set can be downloaded from the below site:
 
-[link Human Activity Recognition Using Smartphones Dataset]([https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip])
+[link Human Activity Recognition Using Smartphones Dataset](<https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>)
 
 R script called run_analysis.R in this Repo that does the following:
   --Merges the training and the test sets to create one data set.
