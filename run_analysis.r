@@ -1,13 +1,13 @@
-# # create a folder for wk3assignment
-# if(!file.exists("./wk3assignment")) {dir.create("./wk3assignment")}
-# # download file from the web
-# download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile="wk3assignment/w3.zip")
+# create a folder for wk3assignment
+if(!file.exists("./wk3assignment")) {dir.create("./wk3assignment")}
+# download file from the web
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile="wk3assignment/w3.zip")
 
-# # unzip the downloaded file
-# unzip("wk3assignment/w3.zip",exdir="wk3assignment")
+# unzip the downloaded file
+unzip("wk3assignment/w3.zip",exdir="wk3assignment")
 
-# # set new working directory
-# setwd("./wk3assignment/UCI HAR Dataset")
+# set new working directory
+setwd("./wk3assignment/UCI HAR Dataset")
 
 # get feature list
 feature <-read.delim("features.txt",head=FALSE,sep="",as.is=T)
@@ -47,4 +47,4 @@ colnames(combset)[1:nrow(feature)] <- feature[,2] # get descriptive label from f
 
 # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 output <- aggregate( do.call("cbind",combset[,1:nrow(feature)]) ~ subject + activity,combset, mean)
-write.csv(output,"wk3assignment_tidydata.csv")
+write.table(output,"wk3assignment_tidydata.txt",sep"")
