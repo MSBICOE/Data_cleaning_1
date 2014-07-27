@@ -30,7 +30,7 @@ testset <- cbind(test,testsub, testlabel)
 combset <- rbind(trainset, testset)
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-mean_sd_only <- combset[,sort(c(grep("[-]mean[()]",feature[[2]]),grep("[-]std[()]",feature[[2]])))]
+mean_sd_only <- combset[,grep("[-]mean[()]|[-]std[()]",feature[[2]])]
 
 # 3. Uses descriptive activity names to name the activities in the data set
 
