@@ -5,7 +5,7 @@ Assignment Repo for Coursera data cleaning course
 
 This is week 3 of data cleaning course assignment. The main purpose of this assignment is to combine the 2 datasets
 together: train dataset and test dataset. After dataset is combined, the proper variable names need to be given based
-on the variable name list from another file.
+on the variable name list from another variable list file (feature.txt file).
 
 The data set can be downloaded from the below site:
 
@@ -29,4 +29,4 @@ R script called run_analysis.R in this Repo that does the following:
   - Appropriately labels the data set with descriptive variable names. 
   - Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
   
-The script will write out an text file.
+The script will write out a text file at the working directory.
