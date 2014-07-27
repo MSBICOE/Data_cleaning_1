@@ -13,7 +13,6 @@ Main steps and techique
         - the script used: combset[,sort(c(grep("[-]mean[()]",feature[[2]]),grep("[-]std[()]",feature[[2]])))]
         - use grep to find the text pattern in the variables list, since grep take the regular expressions, I have to use
           brackets for special characters like -, ()
-        - combine the both -mean() and -std() measures together and sorted based on the row number by using sort()
 8. Uses descriptive activity names to name the activities in the data set
         - merge() is used to combine the activity label with activity descriptions
         - after the activity descriptiobn column is in the dataset, removed the activity ID column
